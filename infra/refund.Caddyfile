@@ -3,6 +3,7 @@ refund.139.84.249.47.sslip.io {
     request_body {
         max_size 14MB
     }
+    header /demo/refund-runner-slides.pdf Content-Disposition "attachment; filename=refund-runner-slides.pdf"
     reverse_proxy 127.0.0.1:18285
     header Referrer-Policy no-referrer
     header X-Content-Type-Options nosniff

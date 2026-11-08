@@ -24,7 +24,7 @@
   "web/assets/app.js": "6bb2bc554ed7f9f1d0272eb5fdcb69d695c174592a656825486ee1d5a1a61d43",
   "web/assets/favicon.svg": "70e3675e90fe65e1e7aa2c6230edfb45b33842a1b5a1593e604aa627c7897ad6",
   "web/assets/inter-latin.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
-  "web/index.html": "b352443a73ce874926b0ddea335bd890d7ffd6f73109deb39174c5bb2b89451a",
+  "web/index.html": "2ee6188eb10ce7e0185380addf0e0165dff17e3476f4e7a15b401efce2266017",
   "fixtures/README.md": "f738b29738ca879b3a8910b5e8818b292a1b9f27625425cfd04152d80cebf3ba",
   "fixtures/confirmation.txt": "f94cdd96c8885e863b9269784cc917ba6b6ad11c5aa1a036cac91cb14355b5e2",
   "fixtures/statement.csv": "fad15d1ef7ffd6f1e6cdad98bc600f18fbe4dfcc3756b164a36644e427e7bf69",
@@ -42,7 +42,7 @@
   "scripts/verify_evidence.py": "e7d735608ddd75b873e72d0f5895210404147a6d2e1f988c8b0bad047dd1c389",
   "infra/locked-images.json": "897c43c80c63dd4cdeb84d9b4ccb1dd1ba5dee1cb4fe2f584b840dcf4265ab90",
   "infra/refund-runner.service": "621e7c35f5f67d18bc6867de73ea66a869101439f577033750e303eb2f679ada",
-  "infra/refund.Caddyfile": "d471e8edb69fa44dc6d4f6b894733f4d68fa41339442d10a6b8b0859865ed025",
+  "infra/refund.Caddyfile": "52e8c09ea2312217758eccc9b58cd46c51c1534f76dbbca6687df71629cd9bd3",
   "docs/cover.png": "47386d8ef0528ff730cd9e023bd83e3827d51b806f6fe87cd587f4c36c888421",
   "docs/results.md": "fdc9ba973dc8c739f5917a543914d9c80307a40c7da7a1022bad4fd207cc3e30",
   "docs/testing.md": "21dfd24e921cf8cc5fb37858832171e572dfd68f31bdb2302c4e5a597594c7b6"
