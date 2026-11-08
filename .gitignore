@@ -1,0 +1,14 @@
+.local/
+__pycache__/
+*.pyc
+.env*
+!.env.example
+node_modules/
+reports/private/
+state/
+*.key
+config.json
+public/source/*.zip
+public/demo/*.mp4
+public/demo/*.webm
+public/demo/*.wav

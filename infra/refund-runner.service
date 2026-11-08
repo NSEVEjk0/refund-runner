@@ -1,0 +1,30 @@
+[Unit]
+Description=Refund Runner isolated consumer caseworker
+After=network-online.target docker.service
+Requires=docker.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/refund-runner
+ExecStart=/usr/bin/python3 -m refund.server --config /etc/refund-runner/config.json
+Environment=PYTHONUNBUFFERED=1
+StateDirectory=refund-runner
+StateDirectoryMode=0700
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/refund-runner /run/docker.sock
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+LimitNOFILE=512
+MemoryMax=384M
+TasksMax=64
+Restart=on-failure
+RestartSec=3
+TimeoutStopSec=5
+
+[Install]
+WantedBy=multi-user.target

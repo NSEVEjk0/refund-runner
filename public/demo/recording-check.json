@@ -1,0 +1,110 @@
+{
+  "status": "complete",
+  "measured_at": 1794156822.807,
+  "checks": [
+    {
+      "name": "Public Vultr application and bundled Inter font load",
+      "passed": true
+    },
+    {
+      "name": "Data transfer consent appears before a case is created",
+      "passed": true
+    },
+    {
+      "name": "Fictional demo is labelled in the active workspace",
+      "passed": true
+    },
+    {
+      "name": "Actual browser MediaRecorder WebM reaches real Vultr ASR",
+      "passed": true
+    },
+    {
+      "name": "Generated caseworker speech decodes and plays with sound enabled",
+      "passed": true
+    },
+    {
+      "name": "Confirmation facts have all six real verbatim source spans",
+      "passed": true
+    },
+    {
+      "name": "Browser case verifies the exact $129 outstanding amount",
+      "passed": true
+    },
+    {
+      "name": "Generated caseworker speech decodes and plays with sound enabled",
+      "passed": true
+    },
+    {
+      "name": "A second browser without the capability cannot read the case",
+      "passed": true
+    },
+    {
+      "name": "Cross-origin case mutation is rejected",
+      "passed": true
+    },
+    {
+      "name": "Live support conversation refuses store credit and excessive data",
+      "passed": true
+    },
+    {
+      "name": "Valid offer pauses with the approval button disabled",
+      "passed": true
+    },
+    {
+      "name": "A stale or forged approval binding is rejected by the live server",
+      "passed": true
+    },
+    {
+      "name": "A conversational yes cannot authorize acceptance",
+      "passed": true
+    },
+    {
+      "name": "Customer review records a clearly simulated practice receipt",
+      "passed": true
+    },
+    {
+      "name": "Downloaded evidence records real model calls and inspected teardown",
+      "passed": true
+    },
+    {
+      "name": "Live browser containment lab passes every real probe",
+      "passed": true
+    },
+    {
+      "name": "No browser JavaScript errors occurred",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "result": {
+    "intake_audio": {
+      "duration": 11.2,
+      "muted": false,
+      "volume": 1,
+      "time": 0.841164,
+      "sha256": "0b96b883b7a7615501dda2e64febf2f6f443047467cd7844981cc85e8582ebb5",
+      "filename": "intake-reply.wav"
+    },
+    "verified_audio": {
+      "duration": 14.64,
+      "muted": false,
+      "volume": 1,
+      "time": 0.910297,
+      "sha256": "ef2dbe7f6a5ffecf19452950850f8d8fb700e022a0d1cdec98448009ad2878ae",
+      "filename": "verified-finding.wav"
+    },
+    "case": {
+      "currency": "USD",
+      "matched_rows": [],
+      "outstanding_cents": 12900,
+      "pending_credit_cents": 0,
+      "pending_rows": [],
+      "posted_credit_cents": 0,
+      "review_rows": [],
+      "statement_through": "2026-11-07",
+      "status": "overdue"
+    },
+    "provider_calls": 16
+  },
+  "scope": "Clean recording of the core fictional workflow; the full alternative-case and mobile suite is recorded separately."
+}

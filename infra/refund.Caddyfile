@@ -1,0 +1,10 @@
+# BEGIN Refund Runner route: refund.139.84.249.47.sslip.io
+refund.139.84.249.47.sslip.io {
+    request_body {
+        max_size 14MB
+    }
+    reverse_proxy 127.0.0.1:18285
+    header Referrer-Policy no-referrer
+    header X-Content-Type-Options nosniff
+}
+# END Refund Runner route: refund.139.84.249.47.sslip.io

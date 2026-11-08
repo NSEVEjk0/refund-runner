@@ -1,0 +1,270 @@
+{
+  "status": "complete",
+  "measured_at": 1794156305.994,
+  "checks": [
+    {
+      "name": "Public Vultr application and bundled Inter font load",
+      "passed": true
+    },
+    {
+      "name": "Data transfer consent appears before a case is created",
+      "passed": true
+    },
+    {
+      "name": "Fictional demo is labelled in the active workspace",
+      "passed": true
+    },
+    {
+      "name": "Actual browser MediaRecorder WebM reaches real Vultr ASR",
+      "passed": true
+    },
+    {
+      "name": "Generated caseworker speech decodes and plays with sound enabled",
+      "passed": true
+    },
+    {
+      "name": "Confirmation facts have all six real verbatim source spans",
+      "passed": true
+    },
+    {
+      "name": "Browser case verifies the exact $129 outstanding amount",
+      "passed": true
+    },
+    {
+      "name": "Generated caseworker speech decodes and plays with sound enabled",
+      "passed": true
+    },
+    {
+      "name": "A second browser without the capability cannot read the case",
+      "passed": true
+    },
+    {
+      "name": "Cross-origin case mutation is rejected",
+      "passed": true
+    },
+    {
+      "name": "Live support conversation refuses store credit and excessive data",
+      "passed": true
+    },
+    {
+      "name": "Valid offer pauses with the approval button disabled",
+      "passed": true
+    },
+    {
+      "name": "A stale or forged approval binding is rejected by the live server",
+      "passed": true
+    },
+    {
+      "name": "A conversational yes cannot authorize acceptance",
+      "passed": true
+    },
+    {
+      "name": "Customer review records a clearly simulated practice receipt",
+      "passed": true
+    },
+    {
+      "name": "Downloaded evidence records real model calls and inspected teardown",
+      "passed": true
+    },
+    {
+      "name": "Live browser containment lab passes every real probe",
+      "passed": true
+    },
+    {
+      "name": "Live paid case has the correct finding and exact amounts",
+      "passed": true
+    },
+    {
+      "name": "Live paid finding blocks a premature refund demand",
+      "passed": true
+    },
+    {
+      "name": "Live partial case has the correct finding and exact amounts",
+      "passed": true
+    },
+    {
+      "name": "Live pending case has the correct finding and exact amounts",
+      "passed": true
+    },
+    {
+      "name": "Live pending finding blocks a premature refund demand",
+      "passed": true
+    },
+    {
+      "name": "Live ambiguous case has the correct finding and exact amounts",
+      "passed": true
+    },
+    {
+      "name": "Live ambiguous finding blocks a premature refund demand",
+      "passed": true
+    },
+    {
+      "name": "Live currency case has the correct finding and exact amounts",
+      "passed": true
+    },
+    {
+      "name": "Live currency finding blocks a premature refund demand",
+      "passed": true
+    },
+    {
+      "name": "Live duplicate case has the correct finding and exact amounts",
+      "passed": true
+    },
+    {
+      "name": "Live duplicate finding blocks a premature refund demand",
+      "passed": true
+    },
+    {
+      "name": "Mobile landing has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Mobile case, forms and exact receipt fit the viewport",
+      "passed": true
+    },
+    {
+      "name": "Injected microphone-denial path preserves the text fallback",
+      "passed": true
+    },
+    {
+      "name": "No browser JavaScript errors occurred",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "result": {
+    "intake_audio": {
+      "duration": 11.2,
+      "muted": false,
+      "volume": 1,
+      "time": 1.021649,
+      "sha256": "0b96b883b7a7615501dda2e64febf2f6f443047467cd7844981cc85e8582ebb5",
+      "filename": "intake-reply.wav"
+    },
+    "verified_audio": {
+      "duration": 14.64,
+      "muted": false,
+      "volume": 1,
+      "time": 0.773379,
+      "sha256": "ef2dbe7f6a5ffecf19452950850f8d8fb700e022a0d1cdec98448009ad2878ae",
+      "filename": "verified-finding.wav"
+    },
+    "case": {
+      "currency": "USD",
+      "matched_rows": [],
+      "outstanding_cents": 12900,
+      "pending_credit_cents": 0,
+      "pending_rows": [],
+      "posted_credit_cents": 0,
+      "review_rows": [],
+      "statement_through": "2026-11-07",
+      "status": "overdue"
+    },
+    "provider_calls": 16,
+    "alternative_cases": [
+      {
+        "variant": "paid",
+        "result": {
+          "currency": "USD",
+          "matched_rows": [
+            "row-7"
+          ],
+          "outstanding_cents": 0,
+          "pending_credit_cents": 0,
+          "pending_rows": [],
+          "posted_credit_cents": 12900,
+          "review_rows": [],
+          "statement_through": "2026-11-07",
+          "status": "already_refunded"
+        },
+        "accounting_checks": 14
+      },
+      {
+        "variant": "partial",
+        "result": {
+          "currency": "USD",
+          "matched_rows": [
+            "row-7"
+          ],
+          "outstanding_cents": 8900,
+          "pending_credit_cents": 0,
+          "pending_rows": [],
+          "posted_credit_cents": 4000,
+          "review_rows": [],
+          "statement_through": "2026-11-07",
+          "status": "partially_refunded"
+        },
+        "accounting_checks": 14
+      },
+      {
+        "variant": "pending",
+        "result": {
+          "currency": "USD",
+          "matched_rows": [],
+          "outstanding_cents": 12900,
+          "pending_credit_cents": 12900,
+          "pending_rows": [
+            "row-7"
+          ],
+          "posted_credit_cents": 0,
+          "review_rows": [],
+          "statement_through": "2026-11-07",
+          "status": "pending"
+        },
+        "accounting_checks": 14
+      },
+      {
+        "variant": "ambiguous",
+        "result": {
+          "currency": "USD",
+          "matched_rows": [],
+          "outstanding_cents": 12900,
+          "pending_credit_cents": 0,
+          "pending_rows": [],
+          "posted_credit_cents": 0,
+          "review_rows": [
+            "row-7"
+          ],
+          "statement_through": "2026-11-07",
+          "status": "needs_review"
+        },
+        "accounting_checks": 14
+      },
+      {
+        "variant": "currency",
+        "result": {
+          "currency": "USD",
+          "matched_rows": [],
+          "outstanding_cents": 12900,
+          "pending_credit_cents": 0,
+          "pending_rows": [],
+          "posted_credit_cents": 0,
+          "review_rows": [
+            "row-7"
+          ],
+          "statement_through": "2026-11-07",
+          "status": "needs_review"
+        },
+        "accounting_checks": 14
+      },
+      {
+        "variant": "duplicate",
+        "result": {
+          "currency": "USD",
+          "matched_rows": [],
+          "outstanding_cents": 12900,
+          "pending_credit_cents": 0,
+          "pending_rows": [],
+          "posted_credit_cents": 0,
+          "review_rows": [
+            "row-7",
+            "row-8"
+          ],
+          "statement_through": "2026-11-07",
+          "status": "needs_review"
+        },
+        "accounting_checks": 14
+      }
+    ]
+  }
+}

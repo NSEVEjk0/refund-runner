@@ -1,0 +1,247 @@
+{
+  "status": "complete",
+  "measured_at": 1794156315.809739,
+  "tests_run": 59,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "checks": [
+    {
+      "name": "test_approval.Approval.test_bad_offer_cannot_reach_approval",
+      "passed": true
+    },
+    {
+      "name": "test_approval.Approval.test_every_material_change_invalidates_binding",
+      "passed": true
+    },
+    {
+      "name": "test_approval.Approval.test_exact_button_approval_records_simulation_only",
+      "passed": true
+    },
+    {
+      "name": "test_approval.Approval.test_paid_pending_unresolved_not_due_cannot_start_demand",
+      "passed": true
+    },
+    {
+      "name": "test_approval.Approval.test_partial_store_credit_fee_and_account_changes_rejected",
+      "passed": true
+    },
+    {
+      "name": "test_approval.Approval.test_spoken_or_model_yes_is_not_approval",
+      "passed": true
+    },
+    {
+      "name": "test_approval.Approval.test_unexpected_offer_fields_rejected",
+      "passed": true
+    },
+    {
+      "name": "test_approval.Approval.test_unsafe_model_actions_are_replaced",
+      "passed": true
+    },
+    {
+      "name": "test_approval.Approval.test_used_or_not_ready_offer_cannot_be_approved",
+      "passed": true
+    },
+    {
+      "name": "test_engine.Orchestration.test_failed_verification_never_leaves_an_actionable_result",
+      "passed": true
+    },
+    {
+      "name": "test_engine.Orchestration.test_practice_replaces_unsafe_proposals_and_only_shares_approved_fields",
+      "passed": true
+    },
+    {
+      "name": "test_engine.Orchestration.test_raw_candidate_error_cannot_enter_retry_prompt",
+      "passed": true
+    },
+    {
+      "name": "test_engine.Orchestration.test_spoken_yes_does_not_change_pending_offer",
+      "passed": true
+    },
+    {
+      "name": "test_financial.Accounting.test_absent_credit",
+      "passed": true
+    },
+    {
+      "name": "test_financial.Accounting.test_ambiguous_credit_blocks_even_with_full_paid_credit",
+      "passed": true
+    },
+    {
+      "name": "test_financial.Accounting.test_boolean_and_float_amounts_rejected",
+      "passed": true
+    },
+    {
+      "name": "test_financial.Accounting.test_currency_mismatch_never_converts",
+      "passed": true
+    },
+    {
+      "name": "test_financial.Accounting.test_debit_is_not_a_refund",
+      "passed": true
+    },
+    {
+      "name": "test_financial.Accounting.test_due_today_is_not_overdue",
+      "passed": true
+    },
+    {
+      "name": "test_financial.Accounting.test_duplicate_group_all_excluded",
+      "passed": true
+    },
+    {
+      "name": "test_financial.Accounting.test_excess_credit_never_creates_negative_outstanding",
+      "passed": true
+    },
+    {
+      "name": "test_financial.Accounting.test_future_promise",
+      "passed": true
+    },
+    {
+      "name": "test_financial.Accounting.test_large_and_invalid_decimal_input",
+      "passed": true
+    },
+    {
+      "name": "test_financial.Accounting.test_merchant_only_credit_is_unresolved",
+      "passed": true
+    },
+    {
+      "name": "test_financial.Accounting.test_near_reference_never_counts",
+      "passed": true
+    },
+    {
+      "name": "test_financial.Accounting.test_paid",
+      "passed": true
+    },
+    {
+      "name": "test_financial.Accounting.test_partial_and_pending",
+      "passed": true
+    },
+    {
+      "name": "test_financial.Accounting.test_partial_credits_add_exactly",
+      "passed": true
+    },
+    {
+      "name": "test_financial.Accounting.test_pending_does_not_reduce_money_owed",
+      "passed": true
+    },
+    {
+      "name": "test_financial.Accounting.test_positive_credit_sign",
+      "passed": true
+    },
+    {
+      "name": "test_financial.Accounting.test_reference_normalization_is_exact",
+      "passed": true
+    },
+    {
+      "name": "test_financial.Accounting.test_repeated_row_ids_rejected",
+      "passed": true
+    },
+    {
+      "name": "test_financial.Accounting.test_same_amount_unrelated_merchant_ignored",
+      "passed": true
+    },
+    {
+      "name": "test_financial.Accounting.test_statement_ends_before_promise",
+      "passed": true
+    },
+    {
+      "name": "test_financial.Accounting.test_statement_starts_after_promise",
+      "passed": true
+    },
+    {
+      "name": "test_financial.Accounting.test_zero_is_not_a_credit",
+      "passed": true
+    },
+    {
+      "name": "test_financial.EvidenceAndVerifier.test_ambiguous_json_rejected",
+      "passed": true
+    },
+    {
+      "name": "test_financial.EvidenceAndVerifier.test_boolean_or_float_cannot_pass_as_integer",
+      "passed": true
+    },
+    {
+      "name": "test_financial.EvidenceAndVerifier.test_controls_are_fresh_and_cover_both_credit_signs",
+      "passed": true
+    },
+    {
+      "name": "test_financial.EvidenceAndVerifier.test_customer_confirmation_and_payment_promise_required",
+      "passed": true
+    },
+    {
+      "name": "test_financial.EvidenceAndVerifier.test_duplicate_document_line_ids_rejected",
+      "passed": true
+    },
+    {
+      "name": "test_financial.EvidenceAndVerifier.test_forged_customer_total_blocked",
+      "passed": true
+    },
+    {
+      "name": "test_financial.EvidenceAndVerifier.test_future_statement_coverage_rejected",
+      "passed": true
+    },
+    {
+      "name": "test_financial.EvidenceAndVerifier.test_hardcoded_fixture_output_fails_fresh_controls",
+      "passed": true
+    },
+    {
+      "name": "test_financial.EvidenceAndVerifier.test_omitted_or_extra_jobs_rejected",
+      "passed": true
+    },
+    {
+      "name": "test_financial.EvidenceAndVerifier.test_source_quotes_must_be_verbatim",
+      "passed": true
+    },
+    {
+      "name": "test_financial.EvidenceAndVerifier.test_source_span_does_not_claim_authenticity_or_semantic_truth",
+      "passed": true
+    },
+    {
+      "name": "test_financial.EvidenceAndVerifier.test_statement_dates_must_cover_every_row",
+      "passed": true
+    },
+    {
+      "name": "test_state_and_http.HttpBoundary.test_capability_cookie_is_required",
+      "passed": true
+    },
+    {
+      "name": "test_state_and_http.HttpBoundary.test_cross_origin_mutation_refused",
+      "passed": true
+    },
+    {
+      "name": "test_state_and_http.HttpBoundary.test_duplicate_keys_and_incomplete_body_refused",
+      "passed": true
+    },
+    {
+      "name": "test_state_and_http.HttpBoundary.test_form_post_cannot_bypass_json_requirement",
+      "passed": true
+    },
+    {
+      "name": "test_state_and_http.HttpBoundary.test_microphone_allowed_only_for_self_and_csp_blocks_third_party",
+      "passed": true
+    },
+    {
+      "name": "test_state_and_http.State.test_cannot_delete_running_case",
+      "passed": true
+    },
+    {
+      "name": "test_state_and_http.State.test_daily_reservations_survive_restart",
+      "passed": true
+    },
+    {
+      "name": "test_state_and_http.State.test_expired_case_is_inaccessible_and_collected",
+      "passed": true
+    },
+    {
+      "name": "test_state_and_http.State.test_path_traversal_rejected",
+      "passed": true
+    },
+    {
+      "name": "test_state_and_http.State.test_private_file_permissions_and_deletion",
+      "passed": true
+    },
+    {
+      "name": "test_state_and_http.State.test_wrong_capability_and_other_case_cannot_access",
+      "passed": true
+    }
+  ],
+  "scope": "Local fixed accounting, approval, privacy and orchestration checks. Provider and sandbox test doubles are not live containment evidence."
+}

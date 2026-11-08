@@ -1,0 +1,228 @@
+WEBVTT
+
+00:00:00.350 --> 00:00:04.836
+You returned the item. The merchant promised your money back.
+But
+
+00:00:04.836 --> 00:00:09.321
+another week passes, your statement still has no credit, and
+support
+
+00:00:09.321 --> 00:00:13.807
+keeps sending you in circles. Refund Runner helps with that
+familiar
+
+00:00:13.807 --> 00:00:18.292
+problem. In this fictional example, Northline Outfitters
+promised a one hundred
+
+00:00:18.292 --> 00:00:22.778
+and twenty-nine dollar refund. The application checks what is
+outstanding, organizes
+
+00:00:22.778 --> 00:00:27.263
+the evidence, and gives you a voice caseworker to practice the
+
+00:00:27.263 --> 00:00:29.710
+follow-up. No real company is contacted.
+
+00:00:30.517 --> 00:00:35.336
+Start by speaking in your own words, or type if you
+
+00:00:35.336 --> 00:00:40.155
+prefer. This recording shows the browser microphone producing a
+real audio
+
+00:00:40.155 --> 00:00:44.974
+note. A disposable gVisor worker decodes it, and Vultr speech
+recognition
+
+00:00:44.974 --> 00:00:48.917
+transcribes the refund story. The caseworker chooses the next
+
+00:00:48.917 --> 00:00:53.450
+evidence step and speaks back with a built-in voice. This is
+
+00:00:53.450 --> 00:00:57.983
+turn-based voice intake, not a telephone call. The data-transfer
+notice appears
+
+00:00:57.983 --> 00:01:02.517
+before the case starts, and a spoken yes cannot grant authority.
+
+00:01:03.317 --> 00:01:08.680
+Add the merchant confirmation and a statement CSV. The fixed
+document
+
+00:01:08.680 --> 00:01:14.044
+decoder runs in a new networkless worker. Vultr proposes the
+merchant,
+
+00:01:14.044 --> 00:01:19.408
+references, amount, currency and promised date with exact source
+quotes. Here,
+
+00:01:19.408 --> 00:01:23.797
+all six proposed fields match the fictional confirmation. You
+
+00:01:23.797 --> 00:01:28.559
+review those details and confirm the statement coverage, credit
+sign and
+
+00:01:28.559 --> 00:01:33.321
+original payment promise. The application checks the quoted
+spans. It does
+
+00:01:33.321 --> 00:01:38.084
+not authenticate a document or silently turn a proposed fact
+into
+
+00:01:38.084 --> 00:01:38.517
+proof.
+
+00:01:39.317 --> 00:01:44.261
+Vultr now writes a Python reconciliation program. The bank CSV
+stays
+
+00:01:44.261 --> 00:01:49.206
+out of that generation prompt. The program runs in gVisor on
+
+00:01:49.206 --> 00:01:54.151
+the reviewed inputs and thirteen fresh control cases. A separate
+fixed
+
+00:01:54.151 --> 00:01:58.197
+verifier checks the actual output using integer cents, exact
+
+00:01:58.197 --> 00:02:04.308
+references, duplicate detection and status priorities. In this
+statement through November
+
+00:02:04.308 --> 00:02:10.419
+seventh, there is no matching posted credit, so one hundred and
+
+00:02:10.419 --> 00:02:16.530
+twenty-nine dollars remains outstanding. A partial, pending or
+ambiguous credit receives
+
+00:02:16.530 --> 00:02:18.197
+a different finding.
+
+00:02:19.017 --> 00:02:23.186
+Next, practice the follow-up with an owned support desk. The
+customer
+
+00:02:23.186 --> 00:02:27.356
+mandate requires the outstanding amount to the original payment
+method, with
+
+00:02:27.356 --> 00:02:31.525
+no fees, store credit or account changes. The desk first offers
+
+00:02:31.525 --> 00:02:34.937
+store credit, then asks for a full card number
+
+00:02:34.937 --> 00:02:40.694
+and a verification code. The caseworker refuses both. The model
+proposes
+
+00:02:40.694 --> 00:02:46.452
+typed actions, and trusted code enforces the mandate before
+rendering speech.
+
+00:02:46.452 --> 00:02:52.210
+Only the approved references, amount, currency and promised date
+enter this
+
+00:02:52.210 --> 00:02:53.257
+practice conversation.
+
+00:02:54.083 --> 00:02:59.238
+The desk finally proposes the full outstanding refund to the
+original
+
+00:02:59.238 --> 00:03:04.392
+payment method, within three days, with no fee or account
+change.
+
+00:03:04.392 --> 00:03:09.546
+The agent pauses. The screen shows the exact terms, the
+information
+
+00:03:09.546 --> 00:03:13.763
+disclosed and the simulated destination. A forged binding is
+
+00:03:13.763 --> 00:03:19.801
+rejected, and a conversational yes leaves the offer unaccepted.
+The customer
+
+00:03:19.801 --> 00:03:25.839
+must review and approve it explicitly. That approval is tied to
+
+00:03:25.839 --> 00:03:31.877
+the exact case, calculation, mandate, transcript and terms, so
+changed evidence
+
+00:03:31.877 --> 00:03:33.523
+cannot reuse it.
+
+00:03:34.350 --> 00:03:38.603
+The Containment Lab executes real probes on Vultr. An outbound
+socket
+
+00:03:38.603 --> 00:03:42.857
+connection fails. Host files and the Docker socket are absent.
+The
+
+00:03:42.857 --> 00:03:47.110
+statement cannot be overwritten. A runaway loop is stopped at
+its
+
+00:03:47.110 --> 00:03:50.590
+deadline, excessive output hits the capture limit, and an
+
+00:03:50.590 --> 00:03:55.727
+invented refund total fails independent verification. Each run
+includes the inspected
+
+00:03:55.727 --> 00:04:00.865
+container policy, resource limits, artifact hashes and a
+confirmed removal. All
+
+00:04:00.865 --> 00:04:06.002
+six measured probes pass. These receipts describe observed
+checks; they are
+
+00:04:06.002 --> 00:04:07.870
+not a security audit.
+
+00:04:08.683 --> 00:04:13.586
+The customer approved a practice offer. The receipt clearly
+records a
+
+00:04:13.586 --> 00:04:18.489
+simulation, no real company contact and zero money recovered.
+The useful
+
+00:04:18.489 --> 00:04:23.392
+artifact is the private case packet: reviewed facts, statement
+rows, an
+
+00:04:23.392 --> 00:04:27.403
+unsent follow-up draft, generated code, execution receipts and
+the
+
+00:04:27.403 --> 00:04:33.135
+approval record. The exact archived calculation can be replayed
+in gVisor.
+
+00:04:33.135 --> 00:04:38.867
+Refund Runner brings the evidence and customer limits together
+around a
+
+00:04:38.867 --> 00:04:44.599
+problem people recognize. Try the fictional case, inspect the
+source, and
+
+00:04:44.599 --> 00:04:46.683
+review the measured results.

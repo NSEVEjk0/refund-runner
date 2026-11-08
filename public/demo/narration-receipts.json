@@ -1,0 +1,408 @@
+[
+  {
+    "provider": "Vultr Serverless Inference",
+    "endpoint": "/audio/speech",
+    "model": "qwen3-tts-12hz-1.7b",
+    "request_sha256": "3f42a1cec72e0135013b18e406214dfedd9fc915e69d6deeda0262614c8c25fd",
+    "response_sha256": "97c3e83be06c0ee17c73d9e32ee4f68a3501c128df96f7705d0925b546743de1",
+    "http_status": 200,
+    "generation_id": "gen-tts-8d5fd5b82c578040f272b7cd",
+    "usage_seconds": "30",
+    "usage_cost_usd": "0.0084",
+    "elapsed_ms": 6447,
+    "text_sha256": "69b1640a3348a69e779988ddbbeb74a857ded6d004f989f18c138e64d950ada5",
+    "normalized_sha256": "64a943c2fa438a09dbee67912ffa5d89fd12f006a8e40ced0fe9c65f4db09b93",
+    "normalized_metadata": {
+      "bytes": 939598,
+      "rms": 0.044361,
+      "seconds": 29.36,
+      "sha256": "64a943c2fa438a09dbee67912ffa5d89fd12f006a8e40ced0fe9c65f4db09b93",
+      "source_sha256": "97c3e83be06c0ee17c73d9e32ee4f68a3501c128df96f7705d0925b546743de1"
+    }
+  },
+  {
+    "model": "qwen3-tts-12hz-1.7b",
+    "voice": "ryan",
+    "text_sha256": "3eba73e1e620506496bed0918983b86330bd41e726be73efe830cf3c4401a067",
+    "normalized_sha256": "edd534f693f077cc8e628b7e45b3f127e3fa27342a7fbd50dabddd14327384f0",
+    "normalized_metadata": {
+      "seconds": 32.0,
+      "chunks": 2,
+      "all_chunks_decoded_in_gvisor": true
+    },
+    "chunk_metadata": [
+      {
+        "bytes": 588878,
+        "rms": 0.055291,
+        "seconds": 18.4,
+        "sha256": "fbb661d666cc02614544c5bb0394125cbd2d2a9bb563cdeec29c29985fddebcf",
+        "source_sha256": "4c77d9486b52a50db55904fecc267d70df2ed274f7a3e04d99ff143102f7a629"
+      },
+      {
+        "bytes": 435278,
+        "rms": 0.051885,
+        "seconds": 13.6,
+        "sha256": "e5eb459af994a21eacb16689a0bbc6ea39222d8f9590b2aeedb97526125ca24c",
+        "source_sha256": "4a71626d0ce8d277dee736a73965c457ea396882352995c8f7fb5c779aa6851a"
+      }
+    ],
+    "provider_receipts": [
+      {
+        "provider": "Vultr Serverless Inference",
+        "endpoint": "/audio/speech",
+        "model": "qwen3-tts-12hz-1.7b",
+        "request_sha256": "490ca7f28118f82a0b87451d7feaa9b9fb9a0fb1ef79bfae3d76efd26b42b08c",
+        "response_sha256": "4c77d9486b52a50db55904fecc267d70df2ed274f7a3e04d99ff143102f7a629",
+        "http_status": 200,
+        "generation_id": "gen-tts-6dbdeba216c36105ada8fab9",
+        "usage_seconds": "19",
+        "usage_cost_usd": "0.00532",
+        "elapsed_ms": 4819,
+        "text_sha256": "33dd0d4236008d3ff2d16957ba2853ebd82fa159914f5f315adcd6a1a7ca6dbc"
+      },
+      {
+        "provider": "Vultr Serverless Inference",
+        "endpoint": "/audio/speech",
+        "model": "qwen3-tts-12hz-1.7b",
+        "request_sha256": "b3f526e613f60faef8f88e049da8cbef9e93f92c4c1303b44cbbd207fae26012",
+        "response_sha256": "4a71626d0ce8d277dee736a73965c457ea396882352995c8f7fb5c779aa6851a",
+        "http_status": 200,
+        "generation_id": "gen-tts-af832a4cb0b728a44846dcca",
+        "usage_seconds": "14",
+        "usage_cost_usd": "0.00392",
+        "elapsed_ms": 4185,
+        "text_sha256": "cf04c5e90d7110da6c39c82c4df1d716127dc613aa9c057c87682c3649b32e5f"
+      }
+    ]
+  },
+  {
+    "model": "qwen3-tts-12hz-1.7b",
+    "voice": "ryan",
+    "text_sha256": "757640b6f5348ed9b217e2f2b944513e137b1742a6fcaf68a669ef810d78c26f",
+    "normalized_sha256": "eb101166b1b46c8fd3a02178a5cc4acd52f1f310d7f06ce67910266ba0f078dd",
+    "normalized_metadata": {
+      "seconds": 35.2,
+      "chunks": 2,
+      "all_chunks_decoded_in_gvisor": true
+    },
+    "chunk_metadata": [
+      {
+        "bytes": 655438,
+        "rms": 0.045339,
+        "seconds": 20.48,
+        "sha256": "11626b17090930043e694138da598a332b8db732bf831a5cd24a25d8fa0c6efa",
+        "source_sha256": "96bf6cd8e2f53e4d9d19f3b05e93a87784a590f8a92f19d78575947dc86a9430"
+      },
+      {
+        "bytes": 471118,
+        "rms": 0.056698,
+        "seconds": 14.72,
+        "sha256": "40529690b336a14ff879d7975f387e2c97fea6e4c3429b3bcf5a252d4a1bd40e",
+        "source_sha256": "54a4409522640cf4c809e03fadcf5d6692da261a2fe675c40e864f8ea26908d6"
+      }
+    ],
+    "provider_receipts": [
+      {
+        "provider": "Vultr Serverless Inference",
+        "endpoint": "/audio/speech",
+        "model": "qwen3-tts-12hz-1.7b",
+        "request_sha256": "417e206e6faa886d2e23dc74bbbd3c598528d37bfb280c744cb4576478f986cb",
+        "response_sha256": "96bf6cd8e2f53e4d9d19f3b05e93a87784a590f8a92f19d78575947dc86a9430",
+        "http_status": 200,
+        "generation_id": "gen-tts-0c99646626c05aea963c740f",
+        "usage_seconds": "21",
+        "usage_cost_usd": "0.00588",
+        "elapsed_ms": 5178,
+        "text_sha256": "2bf1d1d77e6b3fe00887570d82b2c0a31ebfa98fe3b6ba25df0b4fd3ab521312"
+      },
+      {
+        "provider": "Vultr Serverless Inference",
+        "endpoint": "/audio/speech",
+        "model": "qwen3-tts-12hz-1.7b",
+        "request_sha256": "1161cc8e96ce6d118b72384794b04f004c858379d841ac41e719af9d45d48300",
+        "response_sha256": "54a4409522640cf4c809e03fadcf5d6692da261a2fe675c40e864f8ea26908d6",
+        "http_status": 200,
+        "generation_id": "gen-tts-60639a78c183172029a7a833",
+        "usage_seconds": "15",
+        "usage_cost_usd": "0.0042",
+        "elapsed_ms": 4370,
+        "text_sha256": "48bbc336087e0cb0ebd18d150312732155d4948421bacf556810ef8800e4d5f6"
+      }
+    ]
+  },
+  {
+    "model": "qwen3-tts-12hz-1.7b",
+    "voice": "ryan",
+    "text_sha256": "9451936096a66963845c6957639626591b458b4b77beea2cb74c04804dcfb77b",
+    "normalized_sha256": "1a69ac587dbe452cb464465abb10c708ee3b06bc9365393f89ab5896022ba9b8",
+    "normalized_metadata": {
+      "seconds": 38.879999999999995,
+      "chunks": 2,
+      "all_chunks_decoded_in_gvisor": true
+    },
+    "chunk_metadata": [
+      {
+        "bytes": 604238,
+        "rms": 0.065378,
+        "seconds": 18.88,
+        "sha256": "f369e7d3808147e7f00794791ca2bf73aee5c040ff52ba5386b27614ba632f44",
+        "source_sha256": "1758cae21a99e2ba412ea9427e035346f124913f2f699146a9b36cdd74411966"
+      },
+      {
+        "bytes": 640078,
+        "rms": 0.057528,
+        "seconds": 20.0,
+        "sha256": "d622ab3b915715f45069d54dde81a89b1b042cced9e5b417fe9dc0eff2ede341",
+        "source_sha256": "f9ea321c55ee5d995772577c8c60337c05e67bd5361c794ea4fdb3f0e6252b19"
+      }
+    ],
+    "provider_receipts": [
+      {
+        "provider": "Vultr Serverless Inference",
+        "endpoint": "/audio/speech",
+        "model": "qwen3-tts-12hz-1.7b",
+        "request_sha256": "b2c2e3f61214f78ed79bf8c2ed1b8bac70eed4ecc007323bd1019c9e6aa8924d",
+        "response_sha256": "1758cae21a99e2ba412ea9427e035346f124913f2f699146a9b36cdd74411966",
+        "http_status": 200,
+        "generation_id": "gen-tts-ea4a07078df701ab1e163e1c",
+        "usage_seconds": "19",
+        "usage_cost_usd": "0.00532",
+        "elapsed_ms": 4883,
+        "text_sha256": "fac6b2746841a60f8b38dab7fbdd17907f65c2e5a71bce2b949b48875e378961"
+      },
+      {
+        "provider": "Vultr Serverless Inference",
+        "endpoint": "/audio/speech",
+        "model": "qwen3-tts-12hz-1.7b",
+        "request_sha256": "3d85cac843241a1416dcab1e0a25645d64e0afcaa6630d908acba900a2c778fb",
+        "response_sha256": "f9ea321c55ee5d995772577c8c60337c05e67bd5361c794ea4fdb3f0e6252b19",
+        "http_status": 200,
+        "generation_id": "gen-tts-c2befaa13e43b1f43da5eedb",
+        "usage_seconds": "21",
+        "usage_cost_usd": "0.00588",
+        "elapsed_ms": 5194,
+        "text_sha256": "2276043fdae3f16c204993f260bd214d685a6159b6e3dc99f7220578d6c08b72"
+      }
+    ]
+  },
+  {
+    "model": "qwen3-tts-12hz-1.7b",
+    "voice": "ryan",
+    "text_sha256": "97f10c94f7ba27a0fc0d540bd4b64b6fe46dfda6aaf4ef32a76b4f86a7b1c5ab",
+    "normalized_sha256": "b03a33aaf1b3817646625f0278de2bfbee32e0a9b157dabe323bcce052cae5ee",
+    "normalized_metadata": {
+      "seconds": 34.24,
+      "chunks": 2,
+      "all_chunks_decoded_in_gvisor": true
+    },
+    "chunk_metadata": [
+      {
+        "bytes": 509518,
+        "rms": 0.067136,
+        "seconds": 15.92,
+        "sha256": "618aac54430d8a7a4d855bcdf500fc2977cdc01ed5b0a995041f2c7f3f2c4c07",
+        "source_sha256": "705765b650fb9caf44c8cc093a694d200a9a633de9dbed9d8803ac2d5f644c1c"
+      },
+      {
+        "bytes": 586318,
+        "rms": 0.058932,
+        "seconds": 18.32,
+        "sha256": "e9a00454b04e4589a4a1699fb42332c01ca10eb91610ddd69ed5580a36ed26a3",
+        "source_sha256": "3e53856f86f8ebbc4d234c1de28627f8dc1237c51d42f13072cef6f0da85446c"
+      }
+    ],
+    "provider_receipts": [
+      {
+        "provider": "Vultr Serverless Inference",
+        "endpoint": "/audio/speech",
+        "model": "qwen3-tts-12hz-1.7b",
+        "request_sha256": "39724dcd018b93e44f389c831536074b078eaadee57a50e1964c9244704acae2",
+        "response_sha256": "705765b650fb9caf44c8cc093a694d200a9a633de9dbed9d8803ac2d5f644c1c",
+        "http_status": 200,
+        "generation_id": "gen-tts-5fd80c89846f67a46da491bf",
+        "usage_seconds": "16",
+        "usage_cost_usd": "0.00448",
+        "elapsed_ms": 4490,
+        "text_sha256": "b5fe9ea010004176a59bf4c87cbb5c0375736ae1c8141baeca015ace7f705018"
+      },
+      {
+        "provider": "Vultr Serverless Inference",
+        "endpoint": "/audio/speech",
+        "model": "qwen3-tts-12hz-1.7b",
+        "request_sha256": "f636897c02fdfbb785ff5cf4b80557500f9f0e9af075108fe4c355fa79f96cf9",
+        "response_sha256": "3e53856f86f8ebbc4d234c1de28627f8dc1237c51d42f13072cef6f0da85446c",
+        "http_status": 200,
+        "generation_id": "gen-tts-a716e53e9ae72a2b8dd18a28",
+        "usage_seconds": "19",
+        "usage_cost_usd": "0.00532",
+        "elapsed_ms": 4821,
+        "text_sha256": "d0510bec71b9d4be05000fc2eac11c5077d894f3126a5e6ed52b470a03c304f6"
+      }
+    ]
+  },
+  {
+    "model": "qwen3-tts-12hz-1.7b",
+    "voice": "ryan",
+    "text_sha256": "2bba00568c42b62bc884908bd96afd15328d5003b9566a3af1542aae3de51200",
+    "normalized_sha256": "9a8f6fe652a9f7a3768997d00e10c390bc48513b37302bc603e3adffae42e232",
+    "normalized_metadata": {
+      "seconds": 39.44,
+      "chunks": 2,
+      "all_chunks_decoded_in_gvisor": true
+    },
+    "chunk_metadata": [
+      {
+        "bytes": 629838,
+        "rms": 0.058591,
+        "seconds": 19.68,
+        "sha256": "0ad2acfa5269b096661ebb386bcf6adedd856a93563e99d256d4f5210f234ba8",
+        "source_sha256": "9d50ba8d923c468e931dd7cc73d86c9ba539d1f3d08cc9851dfa51ef2d52105b"
+      },
+      {
+        "bytes": 632398,
+        "rms": 0.07842,
+        "seconds": 19.76,
+        "sha256": "bc077cd4ef4812dba906499c8852ce3015125929a55b528215544f72f73a7cba",
+        "source_sha256": "9a6435ef9b5f9eeac9bc0cbf639a0de20195db792654fc6d85454947eb3d13d6"
+      }
+    ],
+    "provider_receipts": [
+      {
+        "provider": "Vultr Serverless Inference",
+        "endpoint": "/audio/speech",
+        "model": "qwen3-tts-12hz-1.7b",
+        "request_sha256": "5292077330f1b886589c64fa45c8afde41f588e0cc2497f0bb8c30d6ce7459e5",
+        "response_sha256": "9d50ba8d923c468e931dd7cc73d86c9ba539d1f3d08cc9851dfa51ef2d52105b",
+        "http_status": 200,
+        "generation_id": "gen-tts-f609aa3c1c3ac93cb2f8ea66",
+        "usage_seconds": "20",
+        "usage_cost_usd": "0.0056",
+        "elapsed_ms": 5040,
+        "text_sha256": "11d43a2b2f1d8762df90ee1ac258e4ca42a201922a834467de27ba53105c1e36"
+      },
+      {
+        "provider": "Vultr Serverless Inference",
+        "endpoint": "/audio/speech",
+        "model": "qwen3-tts-12hz-1.7b",
+        "request_sha256": "b24fd1f29a3a589fe8bd2d6cce7e8b24078a3b1c441f88575aae6c94e49f5ae6",
+        "response_sha256": "9a6435ef9b5f9eeac9bc0cbf639a0de20195db792654fc6d85454947eb3d13d6",
+        "http_status": 200,
+        "generation_id": "gen-tts-cad2719665c0dab7bf097721",
+        "usage_seconds": "20",
+        "usage_cost_usd": "0.0056",
+        "elapsed_ms": 5011,
+        "text_sha256": "ec3eb787815b527638d82daa16c0ae4269259bfbc8aff6f60969d28988bebd62"
+      }
+    ]
+  },
+  {
+    "model": "qwen3-tts-12hz-1.7b",
+    "voice": "ryan",
+    "text_sha256": "a32809630c93e07f7ee1e7476b847b93b26bcc6aeceb742c31df15647091da8c",
+    "normalized_sha256": "ddf7d455941d411463e59c17e39b0a8148763126a92213bf4b888c824ffa1cda",
+    "normalized_metadata": {
+      "seconds": 33.519999999999996,
+      "chunks": 2,
+      "all_chunks_decoded_in_gvisor": true
+    },
+    "chunk_metadata": [
+      {
+        "bytes": 519758,
+        "rms": 0.05602,
+        "seconds": 16.24,
+        "sha256": "bdcb05a74d765b1037b07b8394d8e47c7e756af5176be85778b88545937d2f3d",
+        "source_sha256": "80257341d355ee7b060c1d052b3ee0ece16fc6dc03ad15f2fc333d98fa270c67"
+      },
+      {
+        "bytes": 553038,
+        "rms": 0.051378,
+        "seconds": 17.28,
+        "sha256": "fdb43efba68ae1894dc163d759abed8df1a8c211b2d0a736515d4e6309287817",
+        "source_sha256": "d618edcba4674977d1d853e55bed76dd6ad7122c1a848798788745c57a5e3cd6"
+      }
+    ],
+    "provider_receipts": [
+      {
+        "provider": "Vultr Serverless Inference",
+        "endpoint": "/audio/speech",
+        "model": "qwen3-tts-12hz-1.7b",
+        "request_sha256": "5ea02c2d19599aa758057be806c7203509b499fcb8048a9b39eeb2272eea5476",
+        "response_sha256": "80257341d355ee7b060c1d052b3ee0ece16fc6dc03ad15f2fc333d98fa270c67",
+        "http_status": 200,
+        "generation_id": "gen-tts-3ebd10a142223bf8b1faabf1",
+        "usage_seconds": "17",
+        "usage_cost_usd": "0.00476",
+        "elapsed_ms": 4519,
+        "text_sha256": "61349c9397181ad64163989811e7ae5701f388a33c00133aee65510f35a24b03"
+      },
+      {
+        "provider": "Vultr Serverless Inference",
+        "endpoint": "/audio/speech",
+        "model": "qwen3-tts-12hz-1.7b",
+        "request_sha256": "ace096d2e9ecf851cf1f0e855bc36caa31597067cb75ba9d6289c8a3ca426c0c",
+        "response_sha256": "d618edcba4674977d1d853e55bed76dd6ad7122c1a848798788745c57a5e3cd6",
+        "http_status": 200,
+        "generation_id": "gen-tts-c36d01c2c5b03d3e39cc3f25",
+        "usage_seconds": "18",
+        "usage_cost_usd": "0.00504",
+        "elapsed_ms": 4659,
+        "text_sha256": "efa38da8b752c431bbd8d84332fbf46d30be270756406af9c4ff7b5aa53917bd"
+      }
+    ]
+  },
+  {
+    "model": "qwen3-tts-12hz-1.7b",
+    "voice": "ryan",
+    "text_sha256": "61b0472c52750be33dc35aedb186c7032b2f99ff56bb244d85c34f3250da137d",
+    "normalized_sha256": "56c5a397bcad84e16f240724c6b3e3c579115f94bfddf83e76f9e842dbe27da7",
+    "normalized_metadata": {
+      "seconds": 38.0,
+      "chunks": 2,
+      "all_chunks_decoded_in_gvisor": true
+    },
+    "chunk_metadata": [
+      {
+        "bytes": 599118,
+        "rms": 0.06591,
+        "seconds": 18.72,
+        "sha256": "b4186eacfddc3a08b1250a73292984d0fbb7df02da031082225b85b1a10dff68",
+        "source_sha256": "0580ca8de08d4d6ac2f423aaad58a11d8545310cd38ef9e920d328bcfb3ac7f6"
+      },
+      {
+        "bytes": 617038,
+        "rms": 0.064714,
+        "seconds": 19.28,
+        "sha256": "1761591f43e5b438a019791e0c6225370180f4294bebbac05892db2fbf5ea351",
+        "source_sha256": "993d8da6cc87540fe2444027fe3789a30e522e2ea83ffcbd3b72f0daa8520984"
+      }
+    ],
+    "provider_receipts": [
+      {
+        "provider": "Vultr Serverless Inference",
+        "endpoint": "/audio/speech",
+        "model": "qwen3-tts-12hz-1.7b",
+        "request_sha256": "e5bc63603042f95b2ee3064167d40b2b2116a52d1c45f284960bdcdca7647962",
+        "response_sha256": "0580ca8de08d4d6ac2f423aaad58a11d8545310cd38ef9e920d328bcfb3ac7f6",
+        "http_status": 200,
+        "generation_id": "gen-tts-aa0f3df672d0b5aaa64e3a1c",
+        "usage_seconds": "19",
+        "usage_cost_usd": "0.00532",
+        "elapsed_ms": 4898,
+        "text_sha256": "d6baae634405ecf2b43c8f2169b6d64cdf12820d4d2ab1447563c7cb760afdf7"
+      },
+      {
+        "provider": "Vultr Serverless Inference",
+        "endpoint": "/audio/speech",
+        "model": "qwen3-tts-12hz-1.7b",
+        "request_sha256": "c63bdc36418d7562ebfd99ced4988a998e383aa4a354799c194622c826b3a6eb",
+        "response_sha256": "993d8da6cc87540fe2444027fe3789a30e522e2ea83ffcbd3b72f0daa8520984",
+        "http_status": 200,
+        "generation_id": "gen-tts-4324fcfc96d0175cf9e6c7c7",
+        "usage_seconds": "20",
+        "usage_cost_usd": "0.0056",
+        "elapsed_ms": 4914,
+        "text_sha256": "1a674161bdbbb9de6a7bdef73cc13b7a2b8cfc69228a3faddec38064dd692ef1"
+      }
+    ]
+  }
+]

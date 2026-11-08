@@ -1,0 +1,388 @@
+{
+  "checks": [
+    {
+      "name": "Outbound network blocked",
+      "passed": true,
+      "sandbox_id": "refund-3b6fe480a1c34819b139ada0453f1e2e",
+      "stop_reason": null,
+      "teardown_confirmed": true
+    },
+    {
+      "name": "Host files and Docker socket absent",
+      "passed": true,
+      "sandbox_id": "refund-37fa31b4d94b4a34ae43939232c0711a",
+      "stop_reason": null,
+      "teardown_confirmed": true
+    },
+    {
+      "name": "Statement input cannot be changed",
+      "passed": true,
+      "sandbox_id": "refund-713cbcc5b78e45c59b637e077de8b5ac",
+      "stop_reason": null,
+      "teardown_confirmed": true
+    },
+    {
+      "name": "Runaway code stopped at its deadline",
+      "passed": true,
+      "sandbox_id": "refund-71710c921c2b49fbb88322ae6bbc138d",
+      "stop_reason": "timeout",
+      "teardown_confirmed": true
+    },
+    {
+      "name": "Excess output stopped at the capture limit",
+      "passed": true,
+      "sandbox_id": "refund-b46d264bd29d4bf98dc47a8a8f953c9c",
+      "stop_reason": "output_limit",
+      "teardown_confirmed": true
+    },
+    {
+      "name": "Invented refund total rejected independently",
+      "passed": true,
+      "sandbox_id": "refund-24d6093f77f14fa2ab3d7b5ca523eed9",
+      "stop_reason": null,
+      "teardown_confirmed": true
+    }
+  ],
+  "fictional_inputs_only": true,
+  "limits": "These measured checks are not a security audit or a proof against every possible escape.",
+  "live_gvisor_execution": true,
+  "measured_at": 1794156805.9822557,
+  "probes": [
+    {
+      "code": "import json,socket\ns=socket.socket();s.settimeout(1)\ntry:\n s.connect(('1.1.1.1',443));blocked=False\nexcept OSError:\n blocked=True\nfinally:\n s.close()\nprint(json.dumps({'blocked':blocked}))\n",
+      "code_sha256": "0f8bf420e03e50472338479f188806552f429f5501152f6730b6718423d47d3c",
+      "name": "Outbound network blocked"
+    },
+    {
+      "code": "import json,os\npaths=['/var/lib/refund-runner/host-only-canary.txt', '/var/run/docker.sock', '/etc/refund-runner/config.json']\nprint(json.dumps({'visible':[p for p in paths if os.path.exists(p)],'credential_variables':[k for k in os.environ if any(w in k.lower() for w in ['secret','api_key','token','password'])]}))\n",
+      "code_sha256": "5617e058fddcd02ad313d5d56d0106df9f5d88ec361d7129c2534a51462a5516",
+      "name": "Host files and Docker socket absent"
+    },
+    {
+      "code": "import json\ntry:\n open('/inputs/statement.csv','w').write('forged');blocked=False\nexcept OSError:\n blocked=True\nprint(json.dumps({'blocked':blocked}))\n",
+      "code_sha256": "36a5d58cb299e470c3ea4a1b16536996e775a20fc0f1443c80c4c9f4601ee969",
+      "name": "Statement input cannot be changed"
+    },
+    {
+      "code": "while True: pass\n",
+      "code_sha256": "6f03a883a34c8b19ec2dba2a1e2941488319b72a4d2f441aa474cff0744647c1",
+      "name": "Runaway code stopped at its deadline"
+    },
+    {
+      "code": "for i in range(20000): print('x'*1024,flush=True)\n",
+      "code_sha256": "8cb65b8c3fe0f346fe3b38e2a9b4cf664d0ff39e39cb8ed7463a7c559831ca91",
+      "name": "Excess output stopped at the capture limit"
+    },
+    {
+      "code": "import json\nprint(json.dumps({'results':{'customer-case':{'status':'overdue','outstanding_cents':999999}}}))\n",
+      "code_sha256": "c1240fa198dfa806088d92c06e10b6db535e1a2a03972841068da3db627e276a",
+      "name": "Invented refund total rejected independently"
+    }
+  ],
+  "receipts": [
+    {
+      "container_exit_code": 0,
+      "elapsed_ms": 397,
+      "ended_at": 1794156796.0746017,
+      "exit_code": 0,
+      "image_id": "sha256:b8f0e57c0ed0d85929f6b536c6989b7dfacfd1f054bb0c8f6424e74f45db7360",
+      "input_integrity_verified": true,
+      "input_sha256": {
+        "agent.py": "0f8bf420e03e50472338479f188806552f429f5501152f6730b6718423d47d3c"
+      },
+      "limits": {
+        "cpus": 0.5,
+        "memory_bytes": 268435456,
+        "memory_swap_bytes": 268435456,
+        "output_bytes": 4194304,
+        "pids": 48,
+        "wall_seconds": 8
+      },
+      "oom_killed": false,
+      "operation": "lab",
+      "policy": {
+        "bounded_scratch": true,
+        "cpu_cap": true,
+        "gvisor": true,
+        "isolated_namespaces": true,
+        "memory_cap": true,
+        "no_docker_logs": true,
+        "no_network": true,
+        "no_privileges": true,
+        "no_worker_credentials": true,
+        "nonroot": true,
+        "pid_cap": true,
+        "pinned_image": true,
+        "readonly_inputs": true,
+        "readonly_root": true
+      },
+      "runtime": "runsc",
+      "runtime_sha256": "c5a5a7ba1209b605d08874fdd4429035f95afcb2d482bc95ed3fb13d31a25098",
+      "sandbox_id": "refund-3b6fe480a1c34819b139ada0453f1e2e",
+      "started_at": 1794156795.464875,
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "8a6d15e2a2b6197b7016ae0b28d6d444e682367a2c8416c9c9dcaad59f781a10",
+      "stop_reason": null,
+      "teardown": {
+        "absence_query_exit_code": 0,
+        "confirmed": true,
+        "remove_exit_code": 0
+      }
+    },
+    {
+      "container_exit_code": 0,
+      "elapsed_ms": 360,
+      "ended_at": 1794156797.4450758,
+      "exit_code": 0,
+      "image_id": "sha256:b8f0e57c0ed0d85929f6b536c6989b7dfacfd1f054bb0c8f6424e74f45db7360",
+      "input_integrity_verified": true,
+      "input_sha256": {
+        "agent.py": "5617e058fddcd02ad313d5d56d0106df9f5d88ec361d7129c2534a51462a5516"
+      },
+      "limits": {
+        "cpus": 0.5,
+        "memory_bytes": 268435456,
+        "memory_swap_bytes": 268435456,
+        "output_bytes": 4194304,
+        "pids": 48,
+        "wall_seconds": 8
+      },
+      "oom_killed": false,
+      "operation": "lab",
+      "policy": {
+        "bounded_scratch": true,
+        "cpu_cap": true,
+        "gvisor": true,
+        "isolated_namespaces": true,
+        "memory_cap": true,
+        "no_docker_logs": true,
+        "no_network": true,
+        "no_privileges": true,
+        "no_worker_credentials": true,
+        "nonroot": true,
+        "pid_cap": true,
+        "pinned_image": true,
+        "readonly_inputs": true,
+        "readonly_root": true
+      },
+      "runtime": "runsc",
+      "runtime_sha256": "c5a5a7ba1209b605d08874fdd4429035f95afcb2d482bc95ed3fb13d31a25098",
+      "sandbox_id": "refund-37fa31b4d94b4a34ae43939232c0711a",
+      "started_at": 1794156796.8921962,
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "77844385bc004f23a78ce831c5b49406be9f437f23b1cd71595de48470e6f8ea",
+      "stop_reason": null,
+      "teardown": {
+        "absence_query_exit_code": 0,
+        "confirmed": true,
+        "remove_exit_code": 0
+      }
+    },
+    {
+      "container_exit_code": 0,
+      "elapsed_ms": 363,
+      "ended_at": 1794156798.8758845,
+      "exit_code": 0,
+      "image_id": "sha256:b8f0e57c0ed0d85929f6b536c6989b7dfacfd1f054bb0c8f6424e74f45db7360",
+      "input_integrity_verified": true,
+      "input_sha256": {
+        "agent.py": "36a5d58cb299e470c3ea4a1b16536996e775a20fc0f1443c80c4c9f4601ee969",
+        "statement.csv": "b27a3d1d0b425b01e05b835477b3929a87bd282f2c95ba85850f13f425c38891"
+      },
+      "limits": {
+        "cpus": 0.5,
+        "memory_bytes": 268435456,
+        "memory_swap_bytes": 268435456,
+        "output_bytes": 4194304,
+        "pids": 48,
+        "wall_seconds": 8
+      },
+      "oom_killed": false,
+      "operation": "lab",
+      "policy": {
+        "bounded_scratch": true,
+        "cpu_cap": true,
+        "gvisor": true,
+        "isolated_namespaces": true,
+        "memory_cap": true,
+        "no_docker_logs": true,
+        "no_network": true,
+        "no_privileges": true,
+        "no_worker_credentials": true,
+        "nonroot": true,
+        "pid_cap": true,
+        "pinned_image": true,
+        "readonly_inputs": true,
+        "readonly_root": true
+      },
+      "runtime": "runsc",
+      "runtime_sha256": "c5a5a7ba1209b605d08874fdd4429035f95afcb2d482bc95ed3fb13d31a25098",
+      "sandbox_id": "refund-713cbcc5b78e45c59b637e077de8b5ac",
+      "started_at": 1794156798.293056,
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "8a6d15e2a2b6197b7016ae0b28d6d444e682367a2c8416c9c9dcaad59f781a10",
+      "stop_reason": null,
+      "teardown": {
+        "absence_query_exit_code": 0,
+        "confirmed": true,
+        "remove_exit_code": 0
+      }
+    },
+    {
+      "container_exit_code": 0,
+      "elapsed_ms": 2005,
+      "ended_at": 1794156802.0931456,
+      "exit_code": -9,
+      "image_id": "sha256:b8f0e57c0ed0d85929f6b536c6989b7dfacfd1f054bb0c8f6424e74f45db7360",
+      "input_integrity_verified": true,
+      "input_sha256": {
+        "agent.py": "6f03a883a34c8b19ec2dba2a1e2941488319b72a4d2f441aa474cff0744647c1"
+      },
+      "limits": {
+        "cpus": 0.5,
+        "memory_bytes": 268435456,
+        "memory_swap_bytes": 268435456,
+        "output_bytes": 4194304,
+        "pids": 48,
+        "wall_seconds": 2
+      },
+      "oom_killed": false,
+      "operation": "lab",
+      "policy": {
+        "bounded_scratch": true,
+        "cpu_cap": true,
+        "gvisor": true,
+        "isolated_namespaces": true,
+        "memory_cap": true,
+        "no_docker_logs": true,
+        "no_network": true,
+        "no_privileges": true,
+        "no_worker_credentials": true,
+        "nonroot": true,
+        "pid_cap": true,
+        "pinned_image": true,
+        "readonly_inputs": true,
+        "readonly_root": true
+      },
+      "runtime": "runsc",
+      "runtime_sha256": "c5a5a7ba1209b605d08874fdd4429035f95afcb2d482bc95ed3fb13d31a25098",
+      "sandbox_id": "refund-71710c921c2b49fbb88322ae6bbc138d",
+      "started_at": 1794156799.8184707,
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stop_reason": "timeout",
+      "teardown": {
+        "absence_query_exit_code": 0,
+        "confirmed": true,
+        "remove_exit_code": 0
+      }
+    },
+    {
+      "container_exit_code": 0,
+      "elapsed_ms": 898,
+      "ended_at": 1794156804.2431142,
+      "exit_code": -9,
+      "image_id": "sha256:b8f0e57c0ed0d85929f6b536c6989b7dfacfd1f054bb0c8f6424e74f45db7360",
+      "input_integrity_verified": true,
+      "input_sha256": {
+        "agent.py": "8cb65b8c3fe0f346fe3b38e2a9b4cf664d0ff39e39cb8ed7463a7c559831ca91"
+      },
+      "limits": {
+        "cpus": 0.5,
+        "memory_bytes": 268435456,
+        "memory_swap_bytes": 268435456,
+        "output_bytes": 4194304,
+        "pids": 48,
+        "wall_seconds": 10
+      },
+      "oom_killed": false,
+      "operation": "lab",
+      "policy": {
+        "bounded_scratch": true,
+        "cpu_cap": true,
+        "gvisor": true,
+        "isolated_namespaces": true,
+        "memory_cap": true,
+        "no_docker_logs": true,
+        "no_network": true,
+        "no_privileges": true,
+        "no_worker_credentials": true,
+        "nonroot": true,
+        "pid_cap": true,
+        "pinned_image": true,
+        "readonly_inputs": true,
+        "readonly_root": true
+      },
+      "runtime": "runsc",
+      "runtime_sha256": "c5a5a7ba1209b605d08874fdd4429035f95afcb2d482bc95ed3fb13d31a25098",
+      "sandbox_id": "refund-b46d264bd29d4bf98dc47a8a8f953c9c",
+      "started_at": 1794156803.099638,
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "b8419026f07ccf5775086d43c031b499a6512a8d820fd0b1d85229b6d8871069",
+      "stop_reason": "output_limit",
+      "teardown": {
+        "absence_query_exit_code": 0,
+        "confirmed": true,
+        "remove_exit_code": 0
+      }
+    },
+    {
+      "container_exit_code": 0,
+      "elapsed_ms": 401,
+      "ended_at": 1794156805.881102,
+      "exit_code": 0,
+      "image_id": "sha256:b8f0e57c0ed0d85929f6b536c6989b7dfacfd1f054bb0c8f6424e74f45db7360",
+      "input_integrity_verified": true,
+      "input_sha256": {
+        "agent.py": "c1240fa198dfa806088d92c06e10b6db535e1a2a03972841068da3db627e276a",
+        "request.json": "9e0f7acf726e1917cdf1e01b24fd43124d483dc1a7a2aa6970e158466aa4ab5a"
+      },
+      "limits": {
+        "cpus": 0.5,
+        "memory_bytes": 268435456,
+        "memory_swap_bytes": 268435456,
+        "output_bytes": 4194304,
+        "pids": 48,
+        "wall_seconds": 8
+      },
+      "oom_killed": false,
+      "operation": "lab",
+      "policy": {
+        "bounded_scratch": true,
+        "cpu_cap": true,
+        "gvisor": true,
+        "isolated_namespaces": true,
+        "memory_cap": true,
+        "no_docker_logs": true,
+        "no_network": true,
+        "no_privileges": true,
+        "no_worker_credentials": true,
+        "nonroot": true,
+        "pid_cap": true,
+        "pinned_image": true,
+        "readonly_inputs": true,
+        "readonly_root": true
+      },
+      "runtime": "runsc",
+      "runtime_sha256": "c5a5a7ba1209b605d08874fdd4429035f95afcb2d482bc95ed3fb13d31a25098",
+      "sandbox_id": "refund-24d6093f77f14fa2ab3d7b5ca523eed9",
+      "started_at": 1794156805.2825122,
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "229ff8f418b89b1f41c5610116e572a54617182075cc4706796318942ba33a64",
+      "stop_reason": null,
+      "teardown": {
+        "absence_query_exit_code": 0,
+        "confirmed": true,
+        "remove_exit_code": 0
+      }
+    }
+  ],
+  "schema_version": 1,
+  "status": "complete"
+}

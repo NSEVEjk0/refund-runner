@@ -1,0 +1,46 @@
+{
+  "duration_seconds": 287.133,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "narration": "Real Vultr built-in Ryan speech, decoded in networkless gVisor workers.",
+  "visuals": "Owned fictional browser workflow; processing waits shortened where labelled.",
+  "money_recovered_cents": 0,
+  "real_company_contact": false,
+  "source_recording_sha256": "dda9795b9ea5bcfc98e3a9f16496100b9c6ffd96b9a1f0d6ba7103a71ae48c9d",
+  "files": {
+    "refund-runner-demo.mp4": {
+      "bytes": 12231562,
+      "sha256": "0fa534deaf04b02dc1cbb35e04af2a42d8f1cd6b7f746bca460620d443d2bb5b"
+    },
+    "refund-runner-demo.webm": {
+      "bytes": 13890645,
+      "sha256": "1bc5c94873678c6a2c85b75b15d6d9d3e7727380d4628f954371b28d6b5abcaf"
+    },
+    "refund-runner-slides.pdf": {
+      "bytes": 1058755,
+      "sha256": "2d5d17f4ac73ec601d3c1c32200366862d7b281a1409fba7f33836eced9ec418"
+    },
+    "refund-runner-cover.png": {
+      "bytes": 370684,
+      "sha256": "47386d8ef0528ff730cd9e023bd83e3827d51b806f6fe87cd587f4c36c888421"
+    },
+    "demo-poster.jpg": {
+      "bytes": 198419,
+      "sha256": "30d37d7f26d7e5f943414c6232af1384977fd1822f02ecc2f14ee02f2821ac67"
+    },
+    "captions.vtt": {
+      "bytes": 5968,
+      "sha256": "3a771a099fcb9b91223a307b6a0c01920dd1841dfe2d5e6cc02c986eb721a02b"
+    },
+    "narration-receipts.json": {
+      "bytes": 16260,
+      "sha256": "f106d9337f9742f255e0921d8544093bd4feeebd34092d5260044ac13964f1c9"
+    },
+    "demo-chapters.json": {
+      "bytes": 2070,
+      "sha256": "64a29562a05dfdad3ae96e9124c36b5ebbbcfc3af4e8dc2aa6ca070e4b7f264d"
+    }
+  }
+}

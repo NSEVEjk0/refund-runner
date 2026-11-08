@@ -1,0 +1,74 @@
+[
+  {
+    "chapter": 1,
+    "id": "01-problem",
+    "title": "A refund should not become another job.",
+    "start_seconds": 0,
+    "duration_seconds": 30.166666666666668,
+    "processing_waits_shortened": false,
+    "live_screen_recording": false
+  },
+  {
+    "chapter": 2,
+    "id": "02-voice",
+    "title": "Tell your story. The caseworker finds the next step.",
+    "start_seconds": 30.167,
+    "duration_seconds": 32.8,
+    "processing_waits_shortened": true,
+    "live_screen_recording": true
+  },
+  {
+    "chapter": 3,
+    "id": "03-evidence",
+    "title": "A source quote is a starting point for your review.",
+    "start_seconds": 62.967,
+    "duration_seconds": 36.0,
+    "processing_waits_shortened": false,
+    "live_screen_recording": true
+  },
+  {
+    "chapter": 4,
+    "id": "04-money",
+    "title": "Generated code. Actual execution. Independent accounting.",
+    "start_seconds": 98.967,
+    "duration_seconds": 39.7,
+    "processing_waits_shortened": false,
+    "live_screen_recording": true
+  },
+  {
+    "chapter": 5,
+    "id": "05-support",
+    "title": "The caseworker can negotiate only within your limits.",
+    "start_seconds": 138.667,
+    "duration_seconds": 35.06666666666667,
+    "processing_waits_shortened": true,
+    "live_screen_recording": true
+  },
+  {
+    "chapter": 6,
+    "id": "06-approval",
+    "title": "A valid offer stops at your review screen.",
+    "start_seconds": 173.733,
+    "duration_seconds": 40.266666666666666,
+    "processing_waits_shortened": false,
+    "live_screen_recording": true
+  },
+  {
+    "chapter": 7,
+    "id": "07-containment",
+    "title": "Six deliberate failures. Six measured boundaries.",
+    "start_seconds": 214.0,
+    "duration_seconds": 34.333333333333336,
+    "processing_waits_shortened": false,
+    "live_screen_recording": true
+  },
+  {
+    "chapter": 8,
+    "id": "08-packet",
+    "title": "Leave with a checked case packet and a clear next step.",
+    "start_seconds": 248.333,
+    "duration_seconds": 38.8,
+    "processing_waits_shortened": false,
+    "live_screen_recording": false
+  }
+]

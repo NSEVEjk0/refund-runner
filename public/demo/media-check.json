@@ -1,0 +1,51 @@
+{
+  "status": "complete",
+  "measured_at": 1794158716.604,
+  "checks": [
+    {
+      "name": "Public Vultr application and bundled Inter font load",
+      "passed": true
+    },
+    {
+      "name": "Recorded demonstration has real decoded frames and a 3–5 minute duration",
+      "passed": true
+    },
+    {
+      "name": "Public narrated video plays with sound enabled",
+      "passed": true
+    },
+    {
+      "name": "Public video seeking works",
+      "passed": true
+    },
+    {
+      "name": "English captions load",
+      "passed": true
+    },
+    {
+      "name": "Public video supports bounded HTTPS range requests",
+      "passed": true
+    },
+    {
+      "name": "Presentation PDF downloads",
+      "passed": true
+    },
+    {
+      "name": "Current source ZIP downloads",
+      "passed": true
+    },
+    {
+      "name": "No browser JavaScript errors occurred",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "result": {
+    "video": {
+      "duration": 287.167,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "scope": "Deployed video, captions and downloads."
+}

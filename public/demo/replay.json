@@ -1,0 +1,63 @@
+{
+  "status": "complete",
+  "measured_at": 1794158702.624338,
+  "artifact_hashes_checked": true,
+  "claim_hash_checked": true,
+  "event_chain_checked": true,
+  "accounting_checks": 14,
+  "practice_binding_checked": true,
+  "money_recovered_cents": 0,
+  "rerun": true,
+  "scope": "Artifact consistency and independent accounting checks; receipts are application observations, not document authentication.",
+  "rerun_receipt": {
+    "sandbox_id": "refund-5be29df38cb54c6c8bf3cbb55084521e",
+    "operation": "agent",
+    "image_id": "sha256:b8f0e57c0ed0d85929f6b536c6989b7dfacfd1f054bb0c8f6424e74f45db7360",
+    "runtime": "runsc",
+    "runtime_sha256": "c5a5a7ba1209b605d08874fdd4429035f95afcb2d482bc95ed3fb13d31a25098",
+    "input_sha256": {
+      "agent.py": "9f7775225bdeb98d1ddde437f1f746996d25ac217b8d36708ff38dfb6f3152ff",
+      "request.json": "85622a869b485b22426ac8d432f52e95e0824156572a32279bcbb33221dc2f5e"
+    },
+    "limits": {
+      "memory_bytes": 268435456,
+      "memory_swap_bytes": 268435456,
+      "cpus": 0.5,
+      "pids": 48,
+      "wall_seconds": 30,
+      "output_bytes": 4194304
+    },
+    "started_at": 1794158704.0094929,
+    "policy": {
+      "gvisor": true,
+      "pinned_image": true,
+      "no_network": true,
+      "readonly_root": true,
+      "nonroot": true,
+      "memory_cap": true,
+      "cpu_cap": true,
+      "pid_cap": true,
+      "no_privileges": true,
+      "isolated_namespaces": true,
+      "readonly_inputs": true,
+      "bounded_scratch": true,
+      "no_docker_logs": true,
+      "no_worker_credentials": true
+    },
+    "teardown": {
+      "confirmed": true,
+      "remove_exit_code": 0,
+      "absence_query_exit_code": 0
+    },
+    "container_exit_code": 0,
+    "oom_killed": false,
+    "exit_code": 0,
+    "stop_reason": null,
+    "elapsed_ms": 292,
+    "stdout_sha256": "b78e134b4d5516e8d90d8e74ba4ad331efc745e78aa387883eed718d301ff0e2",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr": "",
+    "ended_at": 1794158704.4539719,
+    "input_integrity_verified": true
+  }
+}
