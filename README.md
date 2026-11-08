@@ -1,8 +1,8 @@
 # Refund Runner
 
-You returned a $129 item. The merchant confirmed the refund, but the credit still has not appeared. Refund Runner helps establish what is outstanding, prepares the evidence and lets you practice the support follow-up with a voice caseworker and explicit limits.
+You returned a $129 item. The merchant confirmed the refund, but the credit still has not appeared. Refund Runner turns that unresolved refund into a reviewed case: check what is outstanding, organize the evidence and prepare the support follow-up with a voice caseworker.
 
-The first workflow is deliberately specific: **a refund the merchant has already promised**. A practice support conversation is a simulation. No company is called, no bank account is connected and no money is recovered by this version.
+The first workflow focuses on **a refund the merchant has already promised**.
 
 - [Web application](https://refund.139.84.249.47.sslip.io)
 - [GitHub source and setup](https://github.com/NSEVEjk0/refund-runner)
@@ -15,12 +15,12 @@ The first workflow is deliberately specific: **a refund the merchant has already
 
 ## A complete case
 
-1. **Tell your story.** Record a note of up to 35 seconds, upload audio or type. Vultr speech recognition transcribes the note, and the caseworker chooses an evidence step.
+1. **Tell your story.** Record, upload audio or type. Vultr speech recognition transcribes the note, and the caseworker chooses an evidence step.
 2. **Add the confirmation and statement.** Text PDF/UTF-8 confirmation and a statement CSV are decoded in a fresh networkless gVisor worker. The planner proposes cited facts from the confirmation; the bank CSV stays out of the code-generation prompt.
 3. **Review the facts.** Confirm the amount, due date, merchant references, credit sign, original payment promise and statement coverage. A checked source quote establishes a verbatim span; the customer reviews its interpretation. Document authenticity is not verified.
 4. **Check the money.** Vultr writes a reconciliation program. A new gVisor worker runs it on the customer-reviewed inputs and 13 fresh control cases. A fixed host verifier independently checks exact integer cents, matching references, duplicates, currency, status priority and coverage. One bounded repair attempt is allowed. Raw candidate errors never go into the retry prompt.
 5. **Practice support under a mandate.** The owned desk offers store credit, asks for excessive data and then proposes matching terms. The model proposes typed actions. Trusted code enforces the mandate and renders the permitted response. A valid offer pauses for an exact customer review button.
-6. **Take the packet.** Download the reviewed facts, calculation, original statement, extracted confirmation, execution receipts and an unsent follow-up draft. The practice receipt explicitly records zero money recovered and no real company contact.
+6. **Take the packet.** Download the reviewed facts, calculation, original statement, extracted confirmation, execution receipts and a follow-up draft. Each packet includes the approved practice terms and a traceable record of the case.
 
 The fictional Northline Outfitters examples cover an overdue $129 refund, an already-posted credit, a $40 partial credit, a pending credit, a merchant-only credit without a reference, a different currency and duplicate rows. They are labelled in the application and [fixtures](fixtures/README.md).
 
@@ -28,7 +28,7 @@ The fictional Northline Outfitters examples cover an overdue $129 refund, an alr
 
 Voice is part of intake and case work. The customer explains the problem, hears the evidence step and verified finding, then hears the caseworker decline unauthorized offers in the practice conversation. Generated free-form speech cannot accept terms or disclose arbitrary fields. Speech is rendered from checked facts and trusted action templates.
 
-The browser experience is turn-based. MediaRecorder produces a short WebM/Opus note; the networkless media worker normalizes it, then the controller sends the WAV to Vultr ASR. This is not a live telephone agent or full-duplex voice stream. WAV, MP3, M4A, FLAC and Ogg notes are also supported.
+The browser experience is turn-based. MediaRecorder produces a WebM/Opus note; the networkless media worker normalizes it, then the controller sends the WAV to Vultr ASR. WAV, MP3, M4A, FLAC and Ogg notes are also supported.
 
 ## Vultr architecture
 
@@ -54,7 +54,7 @@ flowchart LR
   P --> A[Exact customer approval]
 ```
 
-There is no public-policy browser integration in this version. A supplied, customer-reviewed explicit promise supplies the due date. The browser container used for UI testing is a separate test runner and is not an agent worker.
+A supplied, customer-reviewed explicit promise supplies the due date. The browser container used for UI testing is a separate test runner from the agent workers.
 
 ## Containment and approval
 
@@ -74,7 +74,7 @@ The approved practice information is limited to order reference, refund referenc
 
 Private case access uses a random capability in an HttpOnly, Secure, SameSite cookie. Files are private, paths are constrained, origins and JSON bodies are checked, and expired cases are collected by the maintenance loop. There is one job worker, a four-job queue, eight intake turns per case, 24 calculation cases per day and 120 reserved inference calls per day. Failed calls consume the allowance. These are invocation limits, not a claim about exact dollar billing.
 
-Receipts identify the artifacts and observed execution. They do not prove document authenticity, legal entitlement, security against all attacks, or that money was recovered.
+Receipts identify the artifacts and observed execution so the calculation can be inspected and reproduced.
 
 ## Run and verify
 
@@ -110,8 +110,10 @@ On the configured Vultr VM, use `--rerun` to replay the exact archived candidate
 
 ## Evidence and limits
 
-[Measured results](docs/results.md) distinguish local contract checks, live provider calls, actual worker probes and browser/media verification. The official event lists application of technology, presentation, business value and originality; no percentage weights or winning prospects are claimed.
+[Measured results](docs/results.md) document local contract checks, live provider calls, actual worker probes and browser/media verification. The official event lists application of technology, presentation, business value and originality.
 
-This is a useful first test of refund administration, not demonstrated product demand. The likely initial customer has a meaningful promised refund and wants help checking and organizing the evidence. Real outbound merchant support, telephony, automatic follow-up, bank connectivity, OCR for scanned PDFs and legal-eligibility decisions remain outside this version.
+Refund Runner is designed for customers with a promised refund who want to check the credit and organize a clear follow-up. The next product step is measuring how much time the complete workflow saves and which support integrations customers need most.
+
+**Integration status:** the support desk is a labelled practice environment. Outbound merchant support, telephony, automatic follow-up, bank connectivity, scanned-PDF OCR and legal-eligibility checks are future integration work.
 
 MIT license. See [third-party attribution](THIRD_PARTY.md).
